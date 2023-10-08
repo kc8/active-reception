@@ -11,4 +11,4 @@
     make build
     ```
 
-**The inital build will take a while**
+**The initial build will take a while**
