@@ -125,8 +125,12 @@ func afterCreateContext() {
 func loop() {
 	showWidgetsDemo(globalStateOfApp)
 	drawTable(globalStateOfApp)
-	gui.BuildBasicRequestUI(globalStateOfApp, "test")
-	gui.BuildBasicRequestUI(globalStateOfApp, "another")
+
+	for k := range globalStateOfApp.Requests {
+		gui.BuildBasicRequestUI(globalStateOfApp, k)
+	}
+
+    gui.MakeBasicRequestUI(globalStateOfApp)
 }
 
 func beforeDestroyContext() {

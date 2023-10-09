@@ -6,7 +6,7 @@
     ```
     make run
     ```
-2. Buil
+2. Build
     ```
     make build
     ```
